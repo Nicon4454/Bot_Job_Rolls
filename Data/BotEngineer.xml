@@ -1,0 +1,82 @@
+<GDInfos>
+    <GDInfo name="bot_walker" class="GDColonistRobot">
+        <components>
+            <comp class="CProperties">
+                <entity_id>bot_walker_entity</entity_id>
+                <group>cgrp_robot</group>
+                <gender type="enum:EGender">Either</gender>
+                <profession_cap>10</profession_cap>
+                <num_outfitcolors>2</num_outfitcolors>
+                <default_outfitcolors>#FC9A02/#204388</default_outfitcolors>
+                <sfx_hurt>Audio/Colonists/sfx_robot_hurt</sfx_hurt>
+                <sfx_death>Audio/Colonists/sfx_robot_death</sfx_death>
+                <portrait_cam_offset>-0.385 0.321 0.8</portrait_cam_offset>
+                <portrait_cam_rotation>7.69 150 0</portrait_cam_rotation>
+                <ui_icon>Objects/icon_InactiveRobot</ui_icon>
+                <allow_jobs>
+                    prof_builder
+                    /prof_miner
+                    /prof_haul
+                    /prof_technician
+                    /prof_engineer
+                </allow_jobs>
+            </comp>
+            <comp class="CAttributesColonist">
+                <list>
+                    <i>c_health</i>
+                    <i>c_power</i>
+                    <i>c_smarts</i>
+                    <i>c_muscles</i>
+                    <i>c_athletics</i>
+                    <i>rb_worker_movespeed</i>
+                    <i>c_workspeed</i>
+                </list>
+            </comp>
+            <comp class="CEquipment">
+                <max_allowed>3</max_allowed>
+            </comp>
+            <comp class="CInventory">
+                <max_items>100</max_items>
+            </comp>
+        </components>
+    </GDInfo>
+
+    <GDInfo name="bot_deepdriller" class="GDColonistRobot">
+        <components>
+            <comp class="CProperties">
+                <entity_id>bot_deepdriller_entity</entity_id>
+                <group>cgrp_robot</group>
+                <gender type="enum:EGender">Either</gender>
+                <profession_cap>10</profession_cap>
+                <num_outfitcolors>2</num_outfitcolors>
+                <default_outfitcolors>#FC9A02/#1A1A1A</default_outfitcolors>
+                <sfx_hurt>Audio/Colonists/sfx_robot_hurt</sfx_hurt>
+                <sfx_death>Audio/Colonists/sfx_robot_death</sfx_death>
+                <portrait_cam_offset>-0.484 0.543 1.154</portrait_cam_offset>
+                <portrait_cam_rotation>6.116 156.4 0.69</portrait_cam_rotation>
+                <ui_icon>Objects/icon_bot_deepdriller</ui_icon>
+                <allow_jobs>
+                    prof_miner
+                    /prof_haul
+                </allow_jobs>
+            </comp>
+            <comp class="CAttributesColonist">
+                <list>
+                    <i>c_health</i>
+                    <i>c_power</i>
+                    <i>c_smarts</i>
+                    <i>c_muscles</i>
+                    <i>c_athletics</i>
+                    <i>rb_driller_movespeed</i>
+                    <i>c_workspeed</i>
+                </list>
+            </comp>
+            <comp class="CEquipment">
+                <max_allowed>3</max_allowed>
+            </comp>
+            <comp class="CInventory">
+                <max_items>10</max_items>
+            </comp>
+        </components>
+    </GDInfo>
+</GDInfos>
